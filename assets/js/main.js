@@ -13,10 +13,12 @@ $(function () {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-section").removeClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/logo.svg");
+            $(".navbar .navbar-brand img").attr("src", "/assets/images/logo.png");
+            $(".navbar .navbar-brand img").attr("width", "250");
         } else {
             $(".navbar-section").addClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/logo-2.svg");
+            $(".navbar .navbar-brand img").attr("src", "/assets/images/logo-2.png");
+            $(".navbar .navbar-brand img").attr("width", "45");
         }
     });
 
